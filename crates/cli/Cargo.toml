@@ -1,0 +1,21 @@
+[package]
+name = "w3w-cli"
+version = "0.1.0"
+authors = ["Oleksii Filonenko <brightone@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+serde = "1.0"
+serde_json = "1.0"
+structopt = "0.3"
+strum = { version = "0.20.0", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.2", features = ["json"] }
+w3w-api = { path = "../api" }
+
+[[bin]]
+name = "w3w"
+path = "src/main.rs"
