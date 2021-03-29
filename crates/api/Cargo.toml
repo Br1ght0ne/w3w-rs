@@ -1,8 +1,10 @@
 [package]
 name = "w3w-api"
+description = "Rust library for what3words public API"
 version = "0.1.0"
 authors = ["Oleksii Filonenko <brightone@protonmail.com>"]
 edition = "2018"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

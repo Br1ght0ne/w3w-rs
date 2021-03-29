@@ -94,6 +94,6 @@ All kinds of contributions are welcome, especially about increasing the coverage
 
 ## License
 
-This project is licensed under [MIT license](LICENSE.md).
+This project is licensed under [MIT license](LICENSE).
 
 [what3words public API]: https://developer.what3words.com/public-api
