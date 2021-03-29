@@ -14,7 +14,7 @@ structopt = "0.3"
 strum = { version = "0.20.0", features = ["derive"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.2", features = ["json"] }
-w3w-api = { path = "../api" }
+w3w-api = "0.1"
 
 [[bin]]
 name = "w3w"
