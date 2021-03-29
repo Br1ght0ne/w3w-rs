@@ -1,7 +1,7 @@
 [package]
 name = "w3w-api"
+version = "0.1.1"
 description = "Rust library for what3words public API"
-version = "0.1.0"
 readme = "../../README.md"
 repository = "https://github.com/Br1ght0ne/w3w-rs/"
 authors = ["Oleksii Filonenko <brightone@protonmail.com>"]
