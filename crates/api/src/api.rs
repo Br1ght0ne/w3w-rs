@@ -11,9 +11,9 @@ pub enum ApiResponse<T> {
     Ok(T),
 }
 
-impl<T> Into<Result<T, Error>> for ApiResponse<T> {
-    fn into(self) -> Result<T, Error> {
-        match self {
+impl<T> From<ApiResponse<T>> for Result<T, Error> {
+    fn from(val: ApiResponse<T>) -> Self {
+        match val {
             ApiResponse::Error { error } => Err(Error::Api(error)),
             ApiResponse::Ok(inner) => Ok(inner),
         }
@@ -83,9 +83,9 @@ pub struct GeoCoords {
     pub lng: f64,
 }
 
-impl Into<geo_types::Point<f64>> for GeoCoords {
-    fn into(self) -> geo_types::Point<f64> {
-        geo_types::Point::new(self.lng, self.lat)
+impl From<GeoCoords> for geo_types::Point<f64> {
+    fn from(val: GeoCoords) -> Self {
+        geo_types::Point::new(val.lng, val.lat)
     }
 }
 
